@@ -141,8 +141,9 @@ export default {
     colorstr(a){
       if(!a || a.length==0)
         return "eeeeee"
-      console.log(this.hexify(a[0])+this.hexify(a[1])+this.hexify(a[2]))
-      return this.hexify(a[0])+this.hexify(a[1])+this.hexify(a[2])
+      return a
+      /*console.log(this.hexify(a[0])+this.hexify(a[1])+this.hexify(a[2]))
+      return this.hexify(a[0])+this.hexify(a[1])+this.hexify(a[2])*/
     }
   },
   mounted(){
