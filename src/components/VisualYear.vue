@@ -14,19 +14,28 @@
       </div>
     </div>
     <div class="undercont">
-      <Legend />
+      <pre class="underleft">
+一段可能的示例JSON（表示2021年12月11日和12日的日程）：
+（请复制粘贴到本地，自由调整之后，复制粘贴到右边的框里）
+{
+  "year": "2021",
+  "yearSchedule": [
+    [],[],[],[],[],[],[],[],[],[],[],[
+      [],[
+        [],[],[],[],[],["ff0000"],["4c8033"]
+      ],[],[],[]
+    ]
+  ]
+}
+      </pre>
       <input type="textarea" class="textup" v-model="schedule"/>
     </div>
   </div>
 </template>
 
 <script>
-import Legend from "./Legend.vue"
 export default {
   name: 'VisualYear',
-  components:{
-    Legend
-  },
   data(){
     return {
       base: 2000,
@@ -185,5 +194,8 @@ export default {
   white-space:-moz-pre-wrap;
   white-space:-o-pre-wrap;
   word-wrap:break-word;
+}
+.underleft{
+  display: inline-block;
 }
 </style>
